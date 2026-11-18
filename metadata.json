@@ -1,0 +1,6 @@
+{
+  "name": "JARVIS GABITA · Auditoría ACESS & Bot Telegram",
+  "description": "Sistema de expedientes operativos y auditoría sanitaria ACESS con bóveda de 10 credenciales, estructura nativa de carpetas en Google Drive y matriz de control.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

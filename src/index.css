@@ -1,0 +1,75 @@
+@import "tailwindcss";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+:root {
+  font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+}
+
+code, kbd, samp, pre {
+  font-family: 'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+}
+
+/* Ambient corporate watermark background for Aprobación 360 */
+.brand-backdrop {
+  position: relative;
+  background-color: #030917;
+  min-height: 100vh;
+}
+
+.brand-backdrop::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: url('/assets/aistudio/Logo_1x1_d0f68eff.png');
+  background-repeat: no-repeat;
+  background-position: center 30%;
+  background-size: 720px;
+  opacity: 0.055;
+  filter: drop-shadow(0 0 60px rgba(2, 132, 199, 0.2));
+  pointer-events: none;
+  z-index: 0;
+}
+
+.brand-backdrop::after {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: 
+    radial-gradient(circle at 20% 15%, rgba(2, 132, 199, 0.09) 0%, transparent 45%),
+    radial-gradient(circle at 80% 80%, rgba(22, 163, 74, 0.08) 0%, transparent 50%),
+    radial-gradient(circle at 50% 50%, rgba(0, 43, 73, 0.35) 0%, transparent 75%);
+  pointer-events: none;
+  z-index: 0;
+}
+
+/* Brand Palette Typography Helpers */
+.text-brand-green {
+  color: #22C55E;
+}
+
+.text-brand-navy {
+  color: #002B49;
+}
+
+.text-brand-cyan {
+  color: #38BDF8;
+}
+
+.bg-brand-navy {
+  background-color: #002B49;
+}
+
+.border-brand-green {
+  border-color: #16A34A;
+}
+
+.border-brand-cyan {
+  border-color: #0284C7;
+}
